@@ -3,8 +3,13 @@ package ua.epam.symovin.beans;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Positive;
+
 public class BeanA implements InitializingBean, DisposableBean {
+    @NotNull
     private String name;
+    @Positive
     private int value;
 
     @Override

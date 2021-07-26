@@ -2,9 +2,13 @@ package ua.epam.symovin.beans;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Positive;
 
 public class BeanE {
+    @NotNull
     private String name;
+    @Positive
     private int value;
 
     @PostConstruct
