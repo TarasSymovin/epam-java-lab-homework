@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-3-web-mvc" />
+        <module name="spring-4-web-mvc" />
         <module name="spring-1-intro-core-homework" />
         <module name="spring-2-core-homework" />
       </profile>
@@ -22,6 +23,7 @@
       <module name="demo" options="-parameters" />
       <module name="spring-2-core-homework" options="-parameters" />
       <module name="spring-3-web-mvc" options="-parameters" />
+      <module name="spring-4-web-mvc" options="-parameters" />
     </option>
   </component>
 </project>
