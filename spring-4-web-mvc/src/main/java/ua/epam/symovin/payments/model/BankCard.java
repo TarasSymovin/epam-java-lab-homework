@@ -18,11 +18,7 @@ public class BankCard {
     private String cardNumber;
     private String cardIban;
     private BigDecimal cardBalance;
-    private BigDecimal creditLimitCurrent;
-    private BigDecimal creditLimitAvailable;
     private boolean block;
-    private Date startDate;
-    private Date endDate;
     private boolean request;
 
     private User user;

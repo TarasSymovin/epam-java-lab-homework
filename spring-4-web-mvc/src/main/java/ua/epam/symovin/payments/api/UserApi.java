@@ -4,9 +4,11 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import ua.epam.symovin.payments.controller.model.UserModel;
 import ua.epam.symovin.payments.dto.UserDto;
+import ua.epam.symovin.payments.dto.group.OnCreate;
 
 import java.util.List;
 
@@ -27,7 +29,7 @@ public interface UserApi {
     @ApiOperation("Create user")
     @ResponseStatus(HttpStatus.CREATED)
     @PutMapping
-    UserModel addUser(@RequestBody UserDto userDto);
+    UserModel addUser(@Validated(OnCreate.class) @RequestBody UserDto userDto);
 
     @ApiOperation("Update user")
     @ResponseStatus(HttpStatus.OK)

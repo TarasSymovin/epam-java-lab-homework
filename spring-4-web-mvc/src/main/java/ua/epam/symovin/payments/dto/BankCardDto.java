@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
-import java.sql.Date;
 import java.util.List;
 
 @Builder
@@ -18,11 +17,7 @@ public class BankCardDto {
     private String cardNumber;
     private String cardIban;
     private BigDecimal cardBalance;
-    private BigDecimal creditLimitCurrent;
-    private BigDecimal creditLimitAvailable;
     private boolean block;
-    private Date startDate;
-    private Date endDate;
     private boolean request;
 
     private UserDto user;

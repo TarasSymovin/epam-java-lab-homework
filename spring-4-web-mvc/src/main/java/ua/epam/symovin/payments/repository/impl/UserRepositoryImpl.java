@@ -20,12 +20,12 @@ public class UserRepositoryImpl implements UserRepository {
 
     @Override
     public User createUser(User user) {
-        return null;
+        return user;
     }
 
     @Override
     public User updateUser(int id, User user) {
-        return null;
+        return user;
     }
 
     @Override
